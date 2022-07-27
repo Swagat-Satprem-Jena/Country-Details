@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-div-search{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #5800FF;
+    color: white;
+}
+
+.heading-div{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: white; */
+}
+
+.search-bar{
+    background: white;
+    padding: 10px 10px;
+    /* border-radius: 7px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 366px;
+    /* border-collapse: collapse; */
+}
+
+.search-bar-text{
+    padding: 10px 15px;
+    width: 330px;
+    border: none;
+    outline: none;
+}
+
+.autocomplete-div{
+    background: white;
+    color: #413F42;
+    width: 366px;
+    max-height: 295.2px;
+    overflow-y: auto;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0;
+}
+
+.autocomplete-div.active {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+.autocomplete-div li{
+    list-style: none;
+    padding: 15px 10px;
+}
+
+
+
+/* Display Div  */
+
+.main-div-display{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #5800FF;
+    /* color: white; */
+}
+
+.card-fit{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2% 3%;
+}
+
+.card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 300px;
+}
+
+.flag-img{
+    width: 320px;
+    height: 213px;
+}
+
+.card-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    /* width: 320px; */
+    height: 300px;
+    margin: 20px;
+}
+
+.maps-text{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.maps-text i{
+    margin-right: 20px;
+}
+.maps-text:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.country-name-div{
+    margin-bottom: 20px;
+}
+
+.lang-spoken-div{
+    margin-bottom: 20px;
+}
+
+.geo-location-div{
+    margin-bottom: 20px;
+}
+
+.show-error-text{
+    color: red;
+    font-size: 20px;
+    padding: 2% 3%;
+    text-align: center;
+    margin-top: 50px;
+}
+

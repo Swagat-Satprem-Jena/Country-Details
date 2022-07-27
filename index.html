@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-div-search">
+        <div class="heading-div">
+            <h2 class="heading-text">Wanna Know About a Country??? Search Here!!</h2>
+        </div>
+        <div class="search-div">
+            <div class="search-bar">
+                <input type="text" class="search-bar-text" id="country-name" name="country"
+                    placeholder="Search a Country ..." autocomplete="off" />
+                <i class="fa-solid fa-magnifying-glass" id="search-button" style="color: #5800FF;"></i>
+            </div>
+            <div class="autocomplete-div">
+                
+            </div>
+        </div>
+
+        <div class="show-error-text"></div>
+    </div>
+
+    <div class="main-div-display">
+        <div class="card-fit">
+            <div class="card-left">
+                <img class="flag-img" src="" alt="country-flag">
+            </div>
+            <div class="card-right">
+                <div class="country-name-div">
+                    <h2 class="country-name-text"></h2>
+                </div>
+                <div class="lang-spoken-div">
+                    <h3 class="lang-spoken-text"></h3>
+                </div>
+                <div class="geo-location-div">
+                    <h3 class="geo-location-text"></h3>
+                </div>
+                <div class="google-map-div">
+                    <a href="#" target="_blank" class="maps-text"><i class="fa-solid fa-map-location-dot"></i> Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="CountryArray.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
